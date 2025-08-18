@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+        border-radius: 50px;
+    padding: 10px 15px;
+    background: #078320;
+    color: white;
+    border: none;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      transition: 0.4s;
+}
+button:hover{
+    background: white;
+    color: #078320;   
+}
+/* nav bar code start */
+
+   .top-bar {
+      background-color: #2f9e44;
+      color: #fff;
+      font-size: 14px;
+      padding: 5px 0;
+    }
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #000 ;
+  margin: 0 12px;       /* little more breathing space */
+  font-size: 18px;      /* slightly balanced for readability */
+  font-weight: 500;     /* medium weight looks cleaner */
+  transition: color 0.3s ease; /* smooth hover effect */
+}
+
+/* Navbar Links Hover */
+.navbar-nav .nav-link:hover {
+  color: #2f9e44 !important;
+}
+.navbar-nav .active{
+    color: #078320 !important;
+}
+/* Search Icon */
+.search-icon {
+  color: #2f9e44;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.search-icon:hover {
+  color: #000;
+}
+
+/* Navbar Brand Logo */
+.navbar-brand img {
+  height: 50px;
+  max-height: 50px;
+  width: auto;
+}
+
+    /* nav bar code end */
+
+    /* product section code  */
+.section-title {
+  position: relative;
+  display: inline-block; 
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100px;              
+  height: 3px;               
+  background-color: green;   
+  margin: 10px auto 0;       
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* out partner */
+.bank-logo-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.bank-logo-box img {
+  max-height: 70px;
+  object-fit: contain;
+}
+
+
+.conversation-section {
+  background: linear-gradient(135deg, #0099ff, #078320);
+  color: white;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Buttons */
+.btn-custom {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.btn-custom:hover {
+  background: #078320;
+  color: #ffffff;
+}
+
+/* Responsive text */
+.conversation-section h2 {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .conversation-section h2 {
+    font-size: 1.8rem;
+  }
+  .btn-custom {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+
+/* footer */
+.footer {
+  background: #e6e6eb; /* light gray */
+  color: #333;
+  font-size: 15px;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #078320;
+}
+
+/* Social Icons */
+.social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #078320;
+  color: #fff;
+}
+
+/* Subscribe Form */
+.subscribe-form {
+  background: #fff;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.subscribe-form input {
+  border: none;
+  padding: 10px 15px;
+  flex: 1;
+  outline: none;
+}
+
+.subscribe-form button {
+  background: #078320;
+  color: #fff;
+  border: none;
+  padding: 0 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribe-form button:hover {
+  background: #078320;
+}
+
+/* Bottom Copyright */
+.footer-bottom {
+  background: #dcdce1;
+  font-size: 14px;
+  color: #555;
+}
+
+  /* Scroll to Top Button */
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none; /* hidden by default */
+    z-index: 999;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  /* about us */
+  .about-section h3 {
+  color: #2f9e44;
+}
+.about-section p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+.about-section ul li {
+  font-size: 16px;
+  line-height: 1.6;
+}
