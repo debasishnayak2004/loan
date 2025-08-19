@@ -45,7 +45,7 @@
   <div class="container">
     <!-- Logo -->
     <a class="navbar-brand" href="#">
-      <img src="assets/images/logo.jpeg" alt="Logo">
+      <img src="assets/images/InShot_20250818_233934579.jpg" alt="Logo">
     </a>
 
     <!-- Toggler -->
@@ -420,5 +420,20 @@
   </script>
 
 <script src="assets/js/script.js"></script>
+<script>
+    window.addEventListener("scroll", function() {
+    let btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  });
+
+  // Smooth scroll to top
+  document.getElementById("scrollTopBtn").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 </body>
 </html>

@@ -53,9 +53,9 @@ button:hover{
 
 /* Navbar Brand Logo */
 .navbar-brand img {
-  height: 50px;
-  max-height: 50px;
-  width: auto;
+  height: 70px;
+  max-height: 70px;
+  width: 100%;
 }
 
     /* nav bar code end */
