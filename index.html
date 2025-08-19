@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -59,8 +60,8 @@
         <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Apply Loan</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Apply DSA</a></li>
+        <li class="nav-item"><a class="nav-link" href="apply-loan.html">Apply Loan</a></li>
+        <li class="nav-item"><a class="nav-link" href="apply-dsa.html">Apply DSA</a></li>
       </ul>
     </div>
 
@@ -72,39 +73,29 @@
 </nav>
 
 <!-- hero section -->
-<section>
-    <div class="container-fluid" style="padding: 0; margin: 0; overflow: hidden;">
-    <div class="row">
-        <div class="col-12">
-            <img src="assets/images/SAMPLE 1.jpg" class="img-fluid" width="100%" alt="">
-        </div>
+ <section>
+   <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="assets/images/SAMPLE 1.jpg" class="img-fluid" width="100%" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/PRODUCT.jpg" class="img-fluid" width="100%" alt="">
+      </div>
     </div>
-</div>
-</section>
-
-<!-- product section -->
-<section>
-    <div class="container-fluid" style="padding: 0; margin: 0; overflow: hidden;">
-        <div class="row">
-            <div class="col-12 text-center py-5">
-            <h2 class="section-title">Product & Services</h2>
-            </div>
-        </div>
-    <div class="row">
-        <div class="col-12">
-            <img src="assets/images/PRODUCT.jpg" class="img-fluid" width="100%" alt="">
-        </div>
-    </div>
-</div>
-</section>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+ </section>
 
 <section class="py-5 text-center">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-8 col-md-10 col-12">
-        <h2 class="pb-4 fw-bold">
-          You can achieve your financial goals. <br> All Loans for Every Need
-        </h2>
+      <div class="col-lg-9 col-md-10 col-12">
+        <h1 class="pb-4 fw-bold ">
+          You can achieve your financial goals. All Loans for Every Need
+        </h1>
         <button>Apply Now</button>
       </div>
     </div>
@@ -369,6 +360,29 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+   var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
 
 <script src="assets/js/script.js"></script>
 </body>
